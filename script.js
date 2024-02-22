@@ -1,5 +1,6 @@
 do{
     let tentativa = 0;
+    let lista = [];
     let palpite;
     let palavra;
 
@@ -11,7 +12,8 @@ do{
     while ((numero != palpite) && (tentativa < 5)){
         palpite = prompt("Digite um número de 0 á 100: ");
         console.log(palpite);
-        tentativa = tentativa +1;
+        tentativa = tentativa+1;
+        lista.push(palpite);
 
         if(numero < palpite){
             window.alert(`O Número era MENOR, Tente novamente`);
@@ -26,6 +28,10 @@ do{
         palavra = tentativa == 1?
         "tentativa":"tentativas";
         window.alert(`Parabéns Você acertou Com ${tentativa} ${palavra}!`);
+    }
+
+    for (let index = 0; index < lista.length; index++){
+        console.log(lista[index]);
     }
 
 } while(window.confirm("Deseja Jogar Novamente?"));
