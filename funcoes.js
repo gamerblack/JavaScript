@@ -27,34 +27,22 @@ console.log(`A área é ${aQ(n2)}cm²`);
 // TAREFA = calcular a área de um quadrado, e de um triângulo
 // PESQUISAR a Diferença de var, let e const
 
-let opcao = window.confirm("Confirme para Calcular a Àrea do Quadrado ou Recuse para seguir ao Calculo da Àrea do Triangulo.");
 
-if  (opcao){
-    function Quadrado () {
-        // Quadrado
-        var l = prompt(`Insira o valor do lado do Quadrado:`);
-        let areaQ = l ** 2;
-        window.alert(`A área do Quadrado é ${areaQ}`);
-    }
-}else {
-    function Triangulo () {
-        // Triângulo
-        var b = prompt(`Insira o valor da Base do Triângulo:`);
-        var h = prompt(`Insira o valor da Altura do Triângulo:`);
-        let areaT = (b * h)/2;
-        window.alert(`A área do Triângulo é ${areaT}`);
-    }
+function Quadrado () {
+    // Quadrado
+    var l = prompt(`Insira o valor do lado do Quadrado:`);
+    let areaQ = l ** 2;
+    window.alert(`A área do Quadrado é ${areaQ}`);
 }
 
-opcao = window.confirm("Deseja Calcular a Área do Triângo?");
 
-if (opcao){
+function Triangulo () {
     // Triângulo
     var b = prompt(`Insira o valor da Base do Triângulo:`);
     var h = prompt(`Insira o valor da Altura do Triângulo:`);
     let areaT = (b * h)/2;
-    window.alert(`A área do Triângulo é ${areaT}`);
-    window.alert(`Tarefa Concluída`);
-}else {
-    window.alert(`Tarefa Concluída`);
+     window.alert(`A área do Triângulo é ${areaT}`);
 }
+
+document.getElementById("body").innerHTML = `<h1>Título</h1> <input type="button" value="quadrado" onclik="Quadrado()">
+<input type="button" value="Triangulo" onclik="Triangulo()">`;
