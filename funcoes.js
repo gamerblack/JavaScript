@@ -44,5 +44,6 @@ function Triangulo () {
      window.alert(`A área do Triângulo é ${areaT}`);
 }
 
-document.getElementById("body").innerHTML = `<h1>Título</h1> <input type="button" value="quadrado" onclik="Quadrado()">
-<input type="button" value="Triangulo" onclik="Triangulo()">`;
+document.getElementById("body").innerHTML = `<h1>Título</h1> 
+<input type="button" value="quadrado" onclick="Quadrado()">
+<input type="button" value="Triangulo" onclick="Triangulo()">`;
