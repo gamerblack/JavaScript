@@ -41,9 +41,25 @@ function Triangulo () {
     var b = prompt(`Insira o valor da Base do Triângulo:`);
     var h = prompt(`Insira o valor da Altura do Triângulo:`);
     let areaT = (b * h)/2;
-     window.alert(`A área do Triângulo é ${areaT}`);
+    window.alert(`A área do Triângulo é ${areaT}`);
 }
 
 document.getElementById("body").innerHTML = `<h1>Título</h1> 
 <input type="button" value="quadrado" onclick="Quadrado()">
 <input type="button" value="Triangulo" onclick="Triangulo()">`;
+
+//aula 07/030/2024
+
+//Tradicional é a normalmente usada em sala;
+
+
+// //Função anonima
+// const Quadrado = function (lado){
+//     console.log("Função Quadrado - Função declrada por Expressão/ Anônima");
+//     return lado**2;
+// }
+
+
+// //Declaração de 'Arrow Function'(função seta)
+// const AreaR = (base, altura) => base*altura;
+// let z = AreaR(5, 9); // chamando função seta
