@@ -1,0 +1,12 @@
+{
+    "nome": "Maria",
+    "sobrenome": "Silva",
+    "Idade": 16,
+    "email": "maria.silva@escola.br",
+    "telefone": "(42) 9 9999-9999",
+    "notas": {
+        "trimestre1": 4.2,
+        "trimestre2": 6.1,
+        "trimestre3": 7.0
+    }
+}

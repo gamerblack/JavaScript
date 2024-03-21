@@ -17,3 +17,11 @@ const aluno = {
 
 aluno.CalcMedia();
 console.log(aluno.media);
+
+aluno.notas.push(8.0);
+aluno.CalcMedia();                                                                                                                           
+console.log(aluno.media);
+
+
+const dadosAluno = require("./aluno.json");
+console.log(dadosAluno);
